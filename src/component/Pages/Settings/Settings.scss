@@ -1,0 +1,149 @@
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+
+  >h1 {
+    font-size: 2.5rem;
+    margin: 1rem 1rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+  }
+
+  >.setting {
+    width: 43%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 1rem;
+    overflow: hidden;
+
+    >.description {
+      font-size: 0.9rem;
+      color: rgba(63, 67, 75, 0.7);
+      font-weight: 600;
+      margin-bottom: 2rem;
+
+    }
+  }
+}
+
+.profile-form {
+  width: auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: (63, 67, 75, 1);
+}
+
+.form-row input,
+.form-row select {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.update-btn {
+  padding: 10px 20px;
+  background-color: rgba(26, 108, 223, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: rgba(26, 108, 223, 1);
+}
+
+
+.notification-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.form-row.labels {
+  margin: 0;
+
+  >label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    color: rgba(0, 0, 0, 0.8);
+
+  }
+
+}
+
+p {
+  font-size: 0.8rem;
+  color: #979797;
+  font-weight: 600;
+}
+
+.checkbox {
+  padding: 1rem;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+.data.setting {
+  >label {
+    display: block;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.6rem;
+  }
+
+  >button {
+    background-color: white;
+    border: 2px solid rgba(212, 219, 227, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.3);
+    padding: 0.2rem 0.8rem;
+    margin-left: 2px;
+    margin-bottom: 14px;
+
+    &:hover {
+      background-color: rgba(212, 219, 227, 0.5);
+    }
+  }
+}
+
+.empty{
+  height: 12px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .settings {
+    padding: 0 6px;
+    margin-bottom: 60px;
+
+    >.setting {
+      width: 100%;
+      // margin-bottom: 12px;
+      /* Full width on small devices */
+    }
+  }
+
+}

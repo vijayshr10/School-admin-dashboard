@@ -1,0 +1,239 @@
+.analytics {
+    padding: 1rem;
+}
+
+.analytics-heading {
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+    padding: 6px;
+    margin-bottom: 1rem;
+}
+
+.top-tiles {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    >.tileContent {
+        font-size: 15px;
+        color: rgb(91, 89, 89);
+        font-weight: bold;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        flex: 1;
+
+        >.mainVal {
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 800;
+        }
+
+        >.highlight {
+            font-size: 0.9rem;
+            margin-right: 6px;
+
+            color: #009900;
+        }
+    }
+}
+
+.analytics-charts {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.chart-tile {
+    flex: 1 1 calc(50% - 3rem);
+    min-width: 250px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+
+
+    >p {
+        display: flex;
+        align-items: center;
+    }
+
+    .one,
+    .two,
+    .three {
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.8);
+
+        >svg {
+            margin-right: 6px;
+        }
+    }
+
+    .one {
+        >svg {
+            color: #2ecc71;
+        }
+    }
+
+    .two {
+        >svg {
+            color: #f39c12;
+        }
+    }
+
+    .three {
+        >svg {
+            color: #e74c3c;
+        }
+    }
+
+
+
+
+
+}
+
+.chart-tile-heading {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.chart-tile-sub-heading {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.row-fill-container {
+    width: 100%;
+
+    padding: 2rem 0;
+
+    .row {
+        margin-bottom: 15px;
+
+        .label {
+
+            margin-bottom: 5px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+
+            >p {
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .item-value {
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 16px;
+            background-color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .progress-fill {
+                height: 100%;
+                border-radius: 10px;
+                background-color: blueviolet; // incase there are no colord for any item
+                transition: width 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+
+.skill-bar-chart {
+    flex: 1 1 100%;
+
+    font-size: 12px;
+
+
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 60px;
+    }
+
+}
+
+.month-over-improvement {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f8fd;
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    .heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        width: 100%;
+        color: black;
+
+    }
+
+    .skill-plate {
+
+        display: grid;
+        gap: 10px;
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+
+    .skill-tile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+
+        background-color: white;
+
+        .item-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.8);
+            flex: 1 1 auto;
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .item-value {
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+
+            &.green {
+                color: #1aae55;
+            }
+
+            &.red {
+                color: #e74c3c;
+            }
+
+            >svg {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,225 @@
+.dashboard {
+    margin: 0;
+
+
+
+}
+
+h1,
+h3 {
+    color: #2a94d1;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left {
+    padding: 1rem;
+    font-weight: 700;
+
+    >h1 {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding: 0.3rem 0;
+    }
+
+    >p {
+        font-size: 1rem;
+        color: #696e71;
+
+    }
+}
+
+.right {
+    display: flex;
+    // justify-content: center;
+    border: 1px #868f94 solid;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #696e71;
+    flex-wrap: wrap;
+
+    padding: 6px 12px;
+    opacity: 0.8;
+    // margin-left: 4px;;
+    // margin-right: 1rem;
+    margin: 0 16px;
+
+    >ul {
+        padding-left: 24px;
+        padding-right: 0;
+    }
+}
+
+.mainContent {
+    padding: 1rem;
+}
+
+.tileplate {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    >.tile {
+        // min-width: 150px;
+        // max-width: 30%;
+
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        padding: 1.2rem;
+        // margin-right: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+
+
+        >.tileContent {
+            font-size: 15px;
+            color: rgb(91, 89, 89);
+            font-weight: bold;
+
+            >.mainVal {
+
+                font-size: 1.5rem;
+                color: black;
+                font-weight: 800;
+                padding: 0.5rem 0;
+
+            }
+
+            >.highlight,
+            >.reference {
+                display: inline;
+                font-size: 0.8rem;
+            }
+
+            >.highlight {
+                font-size: 0.9rem;
+                margin-right: 6px;
+
+                color: #009900;
+            }
+        }
+
+        >.tileIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            >svg {
+                width: 32px;
+                height: 32px;
+                fill: white;
+                padding: 0.8rem;
+                border-radius: 25%;
+            }
+        }
+
+        >.one {
+            >svg {
+                background-color: #194ed3;
+            }
+        }
+
+        >.one {
+            >svg {
+                background-color: #194ed3;
+            }
+        }
+
+        >.two {
+            >svg {
+                background-color: #037d58;
+            }
+        }
+
+        >.three {
+            >svg {
+                background-color: #7e24d0;
+            }
+        }
+
+        >.four {
+            >svg {
+                background-color: #d27104;
+            }
+        }
+
+    }
+}
+
+
+
+.charts {
+    display: flex;
+    // border: 1px black solid;
+    // justify-content: space-between;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+
+    >div {
+        // width: 4%;
+        flex: 1 1 calc(50% - rem);
+        // min-width: 300px;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        padding: 1.2rem;
+        // margin-right: 1rem;
+        overflow-x: auto;
+
+        >.chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+
+.leaderboard-overview,
+.all-students {
+
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+
+
+}
+
+.leaderboard-overview-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    >.trophy1 {
+        color: gold;
+        font-size: 1.15rem;
+    }
+    >.trophy2{
+        font-size: 1.3rem;
+        color: #2A94D1;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 0;
+    }
+}
