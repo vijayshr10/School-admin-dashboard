@@ -1,3 +1,37 @@
+# Dashboard Project
+A simple, responsive, and interactive dashboard built with React. This project utilizes various libraries and tools for creating a sleek UI with real-time data visualizations and dynamic components.
+
+# Demo: https://statuesque-cupcake-ba7b82.netlify.app/
+
+## Features
+Responsive Design: The dashboard adjusts to different screen sizes for mobile, tablet, and desktop.
+Data Visualization: Uses recharts for interactive and visually appealing charts and graphs.
+Routing: Implements react-router-dom for seamless navigation between different views and components.
+Styling: Styled with SASS, providing flexibility for future styling updates.
+
+## Data used: 
+Mock JSON Data 
+User's image: randomuser.me/api/
+
+# Dependencies
+The following dependencies are used to run the project:
+
+## Core Dependencies
+react: ^19.1.1
+react-dom: ^19.1.1
+react-router-dom: ^7.8.0
+react-scripts: 5.0.1
+react-icons: ^5.5.0
+react-select: ^5.10.2
+recharts: ^3.1.2
+web-vitals: ^2.1.4
+
+## Development Dependencies
+sass: ^1.91.0
+sass-loader: ^16.0.5
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
